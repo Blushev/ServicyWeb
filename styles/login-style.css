@@ -1,7 +1,3 @@
-.main{
-    flex: 1 1 auto;
-}
-
 .main__content{
     display: flex;
     justify-content: space-between;
