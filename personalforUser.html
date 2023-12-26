@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/reset-style.css">
     <title>Title</title>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
 <header class="header">
     <div class="header__content">
         <div class="header__title">Servicy</div>
@@ -27,15 +27,16 @@
         </div>
     </div>
 </header>
-<main class="main">
-    <div class="main__content flex items-center">
+<main class="main flex-grow pb-16">
+    <div class="main__content flex flex-col items-center justify-center">
         <h1 class="content__title">Салон красоты</h1>
         <div class="content-info">
-            <div class="content__first-line">
-                <div></div>
-                <div></div>
+            <div class="content__first-line flex justify-between">
+                <div class="w-1/2 bg-gray-500 rounded-lg h-96"></div>
+                <div class="w-1/2 bg-gray-500 rounded-lg h-96"></div>
+
             </div>
-            <div class="description">
+            <div class="description mt-4 p-4">
                 Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
                 Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос
                 Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
@@ -44,9 +45,9 @@
                 Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос
             </div>
 
-            <button class="content__button">Подписаться на организацию</button>
+            <button class="content__button mt-6 w-full py-2">Записаться услугу</button>
 
-            <div class="services">
+            <div class="services mt-4 space-x-4">
                 <div class="services__info">
                     <div class="info__content">
                         <div class="services__info-title">
@@ -94,14 +95,12 @@
                         <button class="services__button">Записаться</button>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </main>
 
-<footer class="footer">
+<footer class="footer absolute bottom-0 w-full">
     <div class="footer__content">
         <div class="footer__content-copyright">
             Copyright 2023
