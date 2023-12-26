@@ -4,112 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/components/footer.css">
     <link rel="stylesheet" href="styles/personal-style.css">
     <link rel="stylesheet" href="styles/reset-style.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
     <title>Title</title>
 </head>
-<body>
-    <header class="header">
-        <div class="header__content">
-            <div class="header__title">Servicy</div>
-            <div class="header__menu">
-                <ul>
-                    <li><button>Главная</button></li>
-                    <li><button>Войти</button></li>
-                </ul>
-            </div>
+<body class="flex flex-col min-h-screen">
+<header class="header">
+    <div class="header__content">
+        <div class="header__title">Servicy</div>
+        <div class="header__menu">
+            <ul>
+                <li><button>Главная</button></li>
+                <li><button>Войти</button></li>
+            </ul>
         </div>
-    </header>
-    <main class="main">
-        <div class="main__content">
-            <h1 class="content__title text-center py-5">Салон красоты</h1>
-            <div class="content-info">
-                <div class="content__first-line">
-                    <div class="lg:w-1/2 bg-gray-500 rounded-lg"></div>
-                    <div class="lg:w-1/2 bg-gray-500 rounded-lg"></div>
-                </div>
-                <div class="description mt-4 p-4">
-                    Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
-                    Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос
-                    Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
-                    Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
-                    Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
-                    Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос
-                </div>
+    </div>
+</header>
+<main class="main flex-1">
+    <div class="main__content flex flex-col items-center justify-center">
+        <h1 class="content__title">Салон красоты</h1>
+        <div class="content-info">
+            <div class="content__first-line flex justify-between">
+                <div class="w-1/2 bg-gray-500 rounded-lg h-96"></div>
+                <div class="w-1/2 bg-gray-500 rounded-lg h-96"></div>
 
-                <button class="content__button mt-6 w-full py-2">Добавить услугу</button>
+            </div>
+            <div class="description mt-4 p-4">
+                Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
+                Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос
+                Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
+                Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
+                Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос Здравствуйте, я дипломированный мастер по реконструкции волос с медицинским образованием.
+                Приглашаю вас на процедуры реконструкции волос: -кератин. -ботокс. -нанопластика. -холодное восстановление волос. -многоступенчатая реконструкция волос
+            </div>
 
-                <div class="services mt-4">
-                    <div class="services__info lg:w-1/3 border">
-                        <div class="info__content">
-                            <div class="services__info-title">
-                                Окрашивание волос (мелирование)
-                            </div>
+            <button class="content__button mt-6 w-full py-2">Записаться услугу</button>
 
-                            <div class="services__price">
-                                180 мин
-                                <br>
-                                Цена: 1200 руб.
-                            </div>
-
-                            <button class="services__button mt-4 w-3/4 py-2">Удалить</button>
+            <div class="services mt-4">
+                <div class="services__info lg:w-1/3 border">
+                    <div class="info__content">
+                        <div class="services__info-title">
+                            Окрашивание волос (мелирование)
                         </div>
-                    </div>
 
-                    <div class="services__info lg:w-1/3 border">
-                        <div class="info__content">
-                            <div class="services__info-title">
-                                Окрашивание волос (мелирование)
-                            </div>
-
-                            <div class="services__price">
-                                180 мин
-                                <br>
-                                Цена: 1200 руб.
-                            </div>
-
-                            <button class="services__button mt-4 w-3/4 py-2 ">Удалить</button>
+                        <div class="services__price">
+                            180 мин
+                            <br>
+                            Цена: 1200 руб.
                         </div>
+
+                        <button class="services__button">Записаться</button>
                     </div>
-
-                    <div class="services__info lg:w-1/3 border">
-                        <div class="info__content">
-                            <div class="services__info-title">
-                                Окрашивание волос (мелирование)
-                            </div>
-
-                            <div class="services__price">
-                                180 мин
-                                <br>
-                                Цена: 1200 руб.
-                            </div>
-
-                            <button class="services__button mt-4 w-3/4 py-2 ">Удалить</button>
-                        </div>
-                    </div>
-
                 </div>
 
-            </div>
-        </div>
-    </main>
+                <div class="services__info lg:w-1/3 border">
+                    <div class="info__content">
+                        <div class="services__info-title">
+                            Окрашивание волос (мелирование)
+                        </div>
 
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__content-copyright">
-                Copyright 2023
-            </div>
-            <div class="footer__content-info">
-                8-800-555-35-35
+                        <div class="services__price">
+                            180 мин
+                            <br>
+                            Цена: 1200 руб.
+                        </div>
+
+                        <button class="services__button">Записаться</button>
+                    </div>
+                </div>
+
+                <div class="services__info lg:w-1/3 border">
+                    <div class="info__content">
+                        <div class="services__info-title">
+                            Окрашивание волос (мелирование)
+                        </div>
+
+                        <div class="services__price">
+                            180 мин
+                            <br>
+                            Цена: 1200 руб.
+                        </div>
+
+                        <button class="services__button">Записаться</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</main>
+
+<footer class="footer" style="margin-top: 120px;">
+    <div class="footer__content">
+        <div class="footer__content-copyright">
+            Copyright 2023
+        </div>
+        <div class="footer__content-info">
+            8-800-555-35-35
+        </div>
+    </div>
+</footer>
 </body>
 </html>
